@@ -12,7 +12,7 @@ const transporter = nodemailer.createTransport({
   service: 'gmail', // or another service like Outlook, Yahoo, etc.
   auth: {
     user: 'mayurrrp29@gmail.com', // Replace with your email
-    pass: 'Mayur@2@2', // Replace with your email password
+    pass: 'qnrf gzey qohw huru', // Replace with your email password
   },
 });
 
