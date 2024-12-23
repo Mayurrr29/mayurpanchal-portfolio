@@ -4,7 +4,7 @@ import SecondScreen from "./SecondScreen";
 import SkillsScreen from "./SkillsScreen";
 import Contact from "./Contact";
 import Footer from "./Footer";
-import Typical from "react-typical";
+
 function Body1(){
     return (
      <>
@@ -12,11 +12,7 @@ function Body1(){
      <section id="home" className="hero-section">
       <div className="hero-content">
       <div className="typicalclasses">
-      <Typical
-      steps={['HELLO,', 2000, 'Welcome to My Portfolio!', 1500]}
-      loop={Infinity}
-      wrapper="div"
-    />
+      <h1>Hello, I'm Mayur</h1>
     </div>
         <p style={{color:"white"}}>Discover my skills and projects.</p>
         <a href="#services" className="btn">View Services</a>
