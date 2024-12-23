@@ -1,0 +1,124 @@
+footer {
+    background-color: #042000;
+    color: #e70c0c;
+    text-align: center;
+    padding: 10px 20px;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.footer-part1{
+    height: 70%;
+    width: 30%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: left;
+    color: #fff;
+    font-style:normal;
+    margin: 30px;}
+
+.footer-part2
+{
+        font-size: 20px;
+        text-align: center;
+        color: #fff;
+}
+.footer-link:hover{
+    color: green;
+}
+
+.f3{
+    height: 70%;
+    width: 10%;
+    text-align: left;
+    flex-direction: column;
+    font-size: large;
+    color: #fff;
+    margin-right: 200px;
+}
+.footer-bottom{
+  text-align: left;
+   margin-left: 500px;
+   margin-bottom: 0;
+   padding: 0;
+}
+.footer-bottom-text{
+    display: table-footer-group;
+    text-align: center;
+    padding-left: 100px;
+    color: #ffffff;
+    font-size: 15px;
+}
+.footer-link{
+    color: #fff;
+    font-size: 15px;
+   
+}
+
+
+/* Tablet Screens */
+@media (max-width: 768px) {
+    .footer-content {
+       height: 100%;
+       width: 100%;
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items */
+      text-align: center; /* Center text for all parts */
+    }
+  
+    .footer-part1,
+    .footer-part2,
+    .f3 {
+      margin: 10px 0;
+    }
+  
+    .footer-part1 {
+      font-size: 20px; /* Adjust font size */
+    }
+  
+    .footer-part2,
+    .f3 {
+      font-size: 10px; /* Adjust font size */
+    }
+  
+    .footer-bottom-text {
+      font-size: 10px; /* Adjust text size */
+      padding: 0 10px; /* Add spacing */
+    }
+  }
+  
+  /* Mobile Screens */
+  @media (max-width: 480px) {
+    .footer-content {
+     flex-direction: row;
+      padding: 10px; /* Reduce padding */
+    }
+  
+    .footer-part1 {
+      font-size: 10px; /* Further reduce font size */
+      margin: 5px 0;
+    }
+  
+    .footer-part2,
+    .f3 {
+
+      font-size: 16px; /* Smaller font for mobile */
+      margin: 5px 0;
+    }
+  
+    .footer-link {
+      content: hidden;
+      font-size: 10px; /* Smaller font for links */
+    }
+  
+    .footer-bottom-text {
+      font-size: 12px; /* Adjust font size */
+    }
+  }

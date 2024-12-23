@@ -1,0 +1,188 @@
+/* Contact Container */
+.Contact-Container {
+    height: auto; /* Full viewport height */
+    width: 100%; /* Full viewport width */
+    display: flex;
+    flex-direction: row; /* Arrange elements side by side initially */
+    background-color: #ffffff; /* Light background color */
+    justify-content: center; /* Center-align items horizontally */
+    align-items: flex-start; /* Align items at the top */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  }
+  
+  /* Form Box */
+  .form-box {
+    height: auto; /* Adjust height automatically */
+    width: 40%; /* Default width for larger screens */
+    margin: 20px; /* Add some spacing */
+    padding: 16px;
+    
+    border-radius: 4px;
+    background-color: #ffffff;
+  
+    flex: 1; /* Allow it to flexibly shrink/grow */
+  }
+  
+  p {
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgb(10, 120, 10);
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: black;
+    text-align: left;
+    font-size: 40px;
+  }
+  
+  label {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: 100;
+  }
+  
+  input,
+  textarea {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 35px;
+  }
+  
+  textarea {
+    height: 100px; /* Adjusted for better usability */
+  }
+  
+  .abcd-bff {
+    align-items: left;
+    height: 20px;
+    width: 20px;
+    margin-right: 20px;
+  }
+  
+  button {
+    width: 100%;
+    height: 35px;
+    margin-top: 20px;
+    background-color: rgb(50, 186, 50);
+    font-size: medium;
+    color: #ffffff;
+    border: none;
+    border-radius: 2px;
+  }
+  
+  button:hover {
+    color: #fff;
+    background-color: rgb(8, 81, 8);
+  }
+  
+  /* Details Box */
+  .details-box {
+    height: auto; /* Adjust height automatically */
+    width: 40%; /* Default width for larger screens */
+    margin: 20px; /* Add some spacing */
+    padding: 16px;
+    border-radius: 4px;
+    background-color: #f6f6f6;
+    flex: 1; /* Allow it to flexibly shrink/grow */
+  }
+  
+  .txt-1 {
+    font-size: 20px;
+    color: black;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .txt-2 {
+    color: rgba(0, 0, 0, 0.742);
+  }
+  
+  .phn-box {
+    color: black;
+    font-size: 15px;
+  }
+  
+  .phn-box:hover {
+    color: rgb(50, 186, 50);
+  }
+  
+  /* Responsive Styles */
+  
+  /* For Tablets */
+  @media (max-width: 768px) {
+    .Contact-Container {
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center; /* Center-align elements */
+    }
+  
+    .form-box,
+    .details-box {
+      width: 90%; /* Take most of the screen width */
+      margin: 10px 0; /* Add vertical spacing */
+    }
+  
+    h1 {
+      font-size: 32px; /* Reduce font size */
+    }
+  
+    label {
+      font-size: 18px; /* Adjust font size */
+    }
+  
+    button {
+      height: 40px; /* Slightly taller button for easier clicking */
+      font-size: medium;
+    }
+  }
+  
+  /* For Mobile Devices */
+  @media (max-width: 480px) {
+    .Contact-Container {
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center; /* Center-align elements */
+      padding: 10px; /* Add padding around the container */
+    }
+  
+    .form-box,
+    .details-box {
+      width: 100%; /* Use full width */
+      margin: 10px 0; /* Add vertical spacing */
+      padding: 10px; /* Reduce padding */
+    }
+  
+    h1 {
+      font-size: 28px; /* Smaller heading size */
+    }
+  
+    label {
+      font-size: 16px; /* Adjust font size for labels */
+    }
+  
+    input,
+    textarea {
+      height: 30px; /* Adjust input size */
+    }
+  
+    textarea {
+      height: 80px; /* Adjusted height */
+    }
+  
+    button {
+      height: 35px;
+      font-size: small;
+    }
+  
+    .txt-1 {
+      font-size: 18px; /* Adjust text size */
+    }
+  
+    .phn-box {
+      font-size: 14px; /* Smaller text for phone number */
+    }
+  }
+  
