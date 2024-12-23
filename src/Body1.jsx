@@ -8,7 +8,7 @@ import Typical from "react-typical";
 function Body1(){
     return (
      <>
-     <body>
+     <div className="main-container">
      <section id="home" className="hero-section">
       <div className="hero-content">
       <div className="typicalclasses">
@@ -29,7 +29,7 @@ function Body1(){
     <SkillsScreen></SkillsScreen>
     <Contact></Contact>
     <Footer></Footer>
-    </body>
+    </div>
      </>
     );
 }
